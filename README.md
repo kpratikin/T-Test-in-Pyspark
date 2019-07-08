@@ -53,7 +53,7 @@ $ notepad groupB.txt
 21000
 21001
 21008
-    
+<ol>    
     
 <br><b>Output:</b>
 The output is a pair:<br>
@@ -63,10 +63,12 @@ mean-A = mean of values for groupA <br>
 mean-B = mean of values for groupB <br>
 your-p-value = p-value (score) of TTest for groupA and groupB (my calculation) <br>
 python-p-value = p-value (score) of TTest for groupA and groupB (ttest_ind calculation) <br>
-
+<br>
+<p align="center"><img src="https://github.com/kpratikin/T-Test-in-Pyspark/blob/master/Output.PNG">
+ <br>Figure: Data Timeline
+ </p>
 <br>
 Note: <ul><li>for a given gene_id, if there are no values in groupA, then output should look like:<br>
   (gene_id, (0.0, 0.0, 0.0, mean-B))
 <li>for a given gene_id, if there are no values in groupB, then output should look like:<br>
   (gene_id, (0.0, 0.0, mean-A, 0.0))  
-<>
