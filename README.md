@@ -11,8 +11,8 @@ where
   <gene_value> is a floating point number such as 1.2, 2.0, ...
 
 <br><b>How to run:</b>
-<ol><li> First store the text files of biosets (groupA.txt and groupB.txt) and ttest.py in one folder.
-  <li>Open commnad prompt and navigate to that folder (like cd 'E:\New_folder' )
+<ol><li> First store the text files of biosets (groupA.txt and groupB.txt), ttest.py and biosets in one folder.
+  <li>Open commnad prompt and navigate to that folder (example cd 'E:\New_folder' )
     <li>Call program (ttest.py) in the command line:
       <br>python ttest.py biosets_path groupA.txt groupB.txt
 where 
@@ -55,3 +55,17 @@ $ notepad groupB.txt
 21008
     
     
+<br><b>Output:</b>
+The output is a pair:<br>
+  (gene_id, (your-p-value, python-p-value, mean-A, mean-B))
+<br>Where:<br>
+mean-A = mean of values for groupA <br>
+mean-B = mean of values for groupB <br>
+your-p-value = p-value (score) of TTest for groupA and groupB (my calculation) <br>
+python-p-value = p-value (score) of TTest for groupA and groupB (ttest_ind calculation) <br>
+
+<br>
+Note: <ul><li>for a given gene_id, if there are no values in groupA, then output should look like:<br>
+  (gene_id, (0.0, 0.0, 0.0, mean-B))
+<li>for a given gene_id, if there are no values in groupB, then output should look like:<br>
+  (gene_id, (0.0, 0.0, mean-A, 0.0))  
