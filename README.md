@@ -10,9 +10,9 @@ where
   <reference> is a string
   <gene_value> is a floating point number such as 1.2, 2.0, ...
 <br> Example:<br>
-  g1,r1,1.4
-  g2,r2,3.6
-  g3,r1,1.0
+  g1,r1,1.4 <br>
+  g2,r2,3.6 <br>
+  g3,r1,1.0 <br>
 
 <br><b>How to run:</b>
 <ol><li> First store the text files of biosets (groupA.txt and groupB.txt), ttest.py and biosets in one folder.
@@ -68,7 +68,7 @@ your-p-value = p-value (score) of TTest for groupA and groupB (my calculation) <
 python-p-value = p-value (score) of TTest for groupA and groupB (ttest_ind calculation) <br>
 <br>
 <p align="center"><img src="https://github.com/kpratikin/T-Test-in-Pyspark/blob/master/Output.PNG">
- <br>Figure: Data Timeline
+ <br>Figure: T-test using Spark (ttest.py output)
  </p>
 <br>
 Note: <ul><li>for a given gene_id, if there are no values in groupA, then output should look like:<br>
