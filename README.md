@@ -14,7 +14,7 @@ where
 <ol><li> First store the text files of biosets (groupA.txt and groupB.txt), ttest.py and biosets in one folder.
   <li>Open commnad prompt and navigate to that folder (example cd 'E:\New_folder' )
     <li>Call program (ttest.py) in the command line:
-      <br>python ttest.py biosets_path groupA.txt groupB.txt
+      <br>spark-submit ttest.py biosets_path groupA.txt groupB.txt
 where 
     * biosets_path points to a directory where all biosets 
        (for both groups)are defined.
@@ -69,3 +69,4 @@ Note: <ul><li>for a given gene_id, if there are no values in groupA, then output
   (gene_id, (0.0, 0.0, 0.0, mean-B))
 <li>for a given gene_id, if there are no values in groupB, then output should look like:<br>
   (gene_id, (0.0, 0.0, mean-A, 0.0))  
+<>
