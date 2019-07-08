@@ -1,8 +1,6 @@
 # T-Test-in-Pyspark
 Conduct t-test between two sets of biosets (i.e. A &amp; B) with the help of spark transformations, dataframes and user defined functions.
-
-<b><br> CODE: https://github.com/kpratikin/T-Test-in-Pyspark/blob/master/ttest.py
-
+<b><br> Refer C0de: https://github.com/kpratikin/T-Test-in-Pyspark/blob/master/ttest.py
 <br>
 <b>Input : </b>
 Each group (A and B) will have a set of biosets. A bioset represents a patient data and each record has the following format:
