@@ -76,4 +76,4 @@ python-p-value = p-value (score) of TTest for groupA and groupB (ttest_ind calcu
 Note: <ul><li>for a given gene_id, if there are no values in groupA, then output should look like:<br>
   (gene_id, (0.0, 0.0, 0.0, mean-B))
 <li>for a given gene_id, if there are no values in groupB, then output should look like:<br>
-  (gene_id, (0.0, 0.0, mean-A, 0.0))  
+  (gene_id, (0.0, 0.0, mean-A, 0.0)).  
