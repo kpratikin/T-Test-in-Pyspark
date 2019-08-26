@@ -1,8 +1,15 @@
-# T-Test-in-Pyspark
-Conduct t-test between two sets of biosets (i.e. A &amp; B) with the help of spark transformations, dataframes and user defined functions.
+# T-Test-in-Pyspark (SPARK APPLICATION)
 
-<b><br> Refer Code: https://github.com/kpratikin/T-Test-in-Pyspark/blob/master/ttest.py</b>
+One of the biggest advantage of using big data technologies is that it gives output way more faster than the typical sequential execution. The amount of data we are generating per day is tremendous i.e. 2.5 quintillion bytes data per day (Refer: https://www.domo.com/learn/data-never-sleeps-5?aid=ogsm072517_1&sf100871281=1). In order to analyze such hughe data, one has to use big data technologies.
+  
+The Objective of this project is simple i.e. to make use of big data technologies and conduct t-test on large amount of data. The program will compute and show us the results in matter of few seconds rather than days, if done without the use of big data technologies like SPARK).
 
+Create an Spark application which will conduct t-test between two sets of biosets with the help of spark transformations, dataframes and user defined functions.
+
+<b><br> Refer Application Code here: https://github.com/kpratikin/T-Test-in-Pyspark/blob/master/ttest.py</b>
+
+
+<b>The details of inputs, outputs and how to run the application are described below: </b>
 <br>
 <b>Input : </b>
 Each group (A and B) will have a set of biosets. A bioset represents a patient data and each record has the following format:
